@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourScales | Sales Automation Systems</title>
+    <link rel="icon" type="image/png" href="./logo.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -57,6 +58,17 @@
                 View Pricing
             </a>
         </div>
+
+        <div class="absolute bottom-12 left-0 right-0 px-6">
+            <p class="text-[10px] font-bold tracking-[0.25em] uppercase text-stone-600 mb-4">Engineered to integrate seamlessly with your stack</p>
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 text-stone-500 text-xs font-bold tracking-widest uppercase">
+                <span class="hover:text-stone-300 transition-colors"><i class="fa-solid fa-brain mr-1.5 text-amber-500/50"></i> OpenAI</span>
+                <span class="hover:text-stone-300 transition-colors"><i class="fa-solid fa-diagram-project mr-1.5 text-amber-500/50"></i> Make.com</span>
+                <span class="hover:text-stone-300 transition-colors"><i class="fa-solid fa-bolt mr-1.5 text-amber-500/50"></i> Zapier</span>
+                <span class="hover:text-stone-300 transition-colors"><i class="fa-solid fa-credit-card mr-1.5 text-amber-500/50"></i> Stripe</span>
+                <span class="hover:text-stone-300 transition-colors"><i class="fa-solid fa-hubspot mr-1.5 text-amber-500/50"></i> HubSpot</span>
+            </div>
+        </div>
     </section>
 
     <section id="capabilities" class="min-h-screen w-full flex flex-col justify-between items-center py-24 px-6 border-t border-stone-900 bg-black">
@@ -72,11 +84,20 @@
                 <h3 class="text-md font-bold tracking-wide uppercase text-white mb-2">Instant Reply Engines</h3>
                 <p class="text-xs text-stone-400 leading-relaxed">When a potential customer messages your business, our system contacts them back in under 5 seconds. No more missed clients or delayed emails.</p>
             </div>
-            <div class="border border-stone-900 bg-stone-950/40 p-8 rounded-xl hover:border-amber-500/30 transition-all duration-300">
-                <div class="text-gold text-lg mb-4"><i class="fa-solid fa-chart-line"></i></div>
-                <h3 class="text-md font-bold tracking-wide uppercase text-white mb-2">Automated Client Finders</h3>
-                <p class="text-xs text-stone-400 leading-relaxed">Custom background engines that automatically reach out to businesses in your market, pitching your services and booking calls straight onto your calendar.</p>
+            
+            <div class="border border-stone-900 bg-stone-950/40 p-8 rounded-xl hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-gold text-lg mb-4"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="text-md font-bold tracking-wide uppercase text-white mb-2">Automated Client Finders</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">Custom background engines that automatically reach out to businesses in your market, pitching your services and booking calls straight onto your calendar.</p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-stone-900/60">
+                    <span class="text-[10px] font-bold tracking-wider uppercase text-amber-400 bg-amber-500/5 px-2.5 py-1 rounded border border-amber-500/10 inline-block">
+                        Automated lead qualification saving 12+ hours/week.
+                    </span>
+                </div>
             </div>
+
             <div class="border border-stone-900 bg-stone-950/40 p-8 rounded-xl hover:border-amber-500/30 transition-all duration-300">
                 <div class="text-gold text-lg mb-4"><i class="fa-solid fa-network-wired"></i></div>
                 <h3 class="text-md font-bold tracking-wide uppercase text-white mb-2">App & System Connections</h3>
@@ -99,7 +120,7 @@
             <div class="flex gap-6">
                 <div class="text-xl font-black text-gold">01</div>
                 <div>
-                    <h4 class="text-sm font-bold uppercase tracking-wide text-white">Find the Leaks</h4>
+                    <h4 class="text-sm font-bold uppercase tracking-wide text-white">Find the Leak</h4>
                     <p class="text-xs text-stone-400 mt-1 leading-relaxed">We look closely at your current setup to see exactly where you are losing leads, dropping conversations, or wasting manual time.</p>
                 </div>
             </div>
@@ -119,8 +140,55 @@
             </div>
         </div>
 
-        <a href="#pricing" class="text-xs font-semibold uppercase tracking-widest text-stone-400 hover:text-white transition-colors">
-            Next: Pricing <i class="fa-solid fa-chevron-down block text-center mt-2"></i>
+        <a href="#reviews" class="text-xs font-semibold uppercase tracking-widest text-stone-400 hover:text-white transition-colors">
+            Next: Reviews <i class="fa-solid fa-chevron-down block text-center mt-2"></i>
+        </a>
+    </section>
+
+    <section id="reviews" class="w-full flex flex-col items-center py-24 px-6 border-t border-stone-900 bg-black">
+        <div class="text-center max-w-xl mb-16">
+            <span class="text-xs font-bold tracking-widest text-amber-400 uppercase">Reviews</span>
+            <h2 class="text-3xl font-bold text-white mt-2">Trusted by Operators</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full px-4 md:px-12">
+            <div class="md:col-span-2 border border-stone-900 bg-stone-950/40 p-8 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-400 text-xs space-x-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-200 text-sm md:text-base leading-relaxed">
+                        "YourScales completely transformed our backend operational flow. They connected our CRM directly to our internal project management boards and built a custom AI filter that handles incoming client requests autonomously. Saved us at least 25 hours a week."
+                    </p>
+                </div>
+                <div class="mt-6 flex items-center gap-3">
+                    <div class="w-8 h-8 rounded bg-stone-900 flex items-center justify-center font-bold text-xs text-amber-400">MV</div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wide text-white">Marcus Vance</h4>
+                        <p class="text-[10px] text-stone-500 uppercase tracking-wider">Operations Director, Apex Media</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between">
+                <p class="text-stone-300 text-xs italic leading-relaxed">"Flawless automation infrastructure. The continuous support retainer keeps our leads moving 24/7."</p>
+                <div class="mt-4 flex items-center gap-2">
+                    <div class="w-6 h-6 rounded bg-stone-900 flex items-center justify-center font-bold text-[10px] text-amber-400">SK</div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-white">Sarah K.</span>
+                </div>
+            </div>
+
+            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between md:col-start-3">
+                <p class="text-stone-300 text-xs italic leading-relaxed">"Saved us from hiring two full-time administrative operators this quarter."</p>
+                <div class="mt-4 flex items-center gap-2">
+                    <div class="w-6 h-6 rounded bg-stone-900 flex items-center justify-center font-bold text-[10px] text-amber-400">DL</div>
+                    <span class="text-[11px] font-bold uppercase tracking-wide text-white">David L.</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#pricing" class="text-xs font-semibold uppercase tracking-widest text-stone-400 hover:text-white transition-colors mt-16">
+            Next: Pricing Plans <i class="fa-solid fa-chevron-down block text-center mt-2"></i>
         </a>
     </section>
 
@@ -146,7 +214,8 @@
                 <span class="absolute -top-3 right-6 bg-gold text-black text-[9px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded">Full Autopilot</span>
                 <div>
                     <h3 class="text-md font-bold tracking-wide uppercase text-white mb-1">System Management Retainer</h3>
-                    <div class="text-2xl font-black text-gold mb-6">$1,500 <span class="text-xs font-normal text-stone-500">/ mo</span></div>
+                    <div class="text-2xl font-black text-gold mb-4">$1,500 <span class="text-xs font-normal text-stone-500">/ mo</span></div>
+                    <p class="text-xs text-amber-400/90 font-semibold uppercase tracking-wider mb-3"><i class="fa-solid fa-shield-halved mr-1"></i> Includes 24/7/365 active monitoring</p>
                     <p class="text-xs text-stone-300 leading-relaxed mb-6">We custom build your automatic response systems, launch your client outreach engines, connect your marketing tools, and handle all technical management daily.</p>
                 </div>
                 <a href="https://buy.stripe.com/test_00wdRa6SOaEsgWX97i9Zm00" target="_blank" class="w-full text-center bg-gold text-black text-xs font-bold uppercase tracking-wider py-3.5 rounded-md transition-all duration-300 hover:opacity-95">
@@ -164,7 +233,12 @@
         <div class="max-w-md w-full px-6">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold tracking-tight text-white mb-2">Request Free Audit</h2>
-                <p class="text-xs text-stone-400 uppercase tracking-widest">Enter your details below to begin</p>
+                
+                <p class="text-xs text-stone-400 uppercase tracking-widest mb-4">Enter your details below to begin</p>
+                <div class="border border-stone-900 bg-stone-950 px-4 py-2.5 rounded text-center text-[11px] text-stone-400 leading-relaxed">
+                    <span class="text-amber-400 font-bold uppercase tracking-wider block mb-0.5"><i class="fa-solid fa-handshake mr-1"></i> Strict Value Guarantee</span>
+                    If we don't map out at least 3 critical data leaks in your current workflow, we'll immediately exit the call. Zero sales pitches.
+                </div>
             </div>
 
             <form action="https://formspree.io/f/xeedznkz" method="POST" class="space-y-6">
