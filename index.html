@@ -29,6 +29,7 @@
             <nav class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-stone-300">
                 <a href="#capabilities" class="hover:text-amber-400 transition-colors duration-300">What We Build</a>
                 <a href="#framework" class="hover:text-amber-400 transition-colors duration-300">How It Works</a>
+                <a href="#reviews" class="hover:text-amber-400 transition-colors duration-300">Reviews</a>
                 <a href="#pricing" class="hover:text-amber-400 transition-colors duration-300">Pricing</a>
             </nav>
             <a href="#consultation" class="border border-stone-700 bg-white/5 hover:bg-white hover:text-black px-4 py-1.5 rounded text-xs font-semibold uppercase tracking-wider transition-all duration-300">
@@ -151,8 +152,8 @@
             <h2 class="text-3xl font-bold text-white mt-2">Trusted by Operators</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full px-4 md:px-12">
-            <div class="md:col-span-2 border border-stone-900 bg-stone-950/40 p-8 rounded-xl flex flex-col justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full px-4 md:px-12 items-start">
+            <div class="md:col-span-2 border border-stone-900 bg-stone-950/40 p-8 rounded-xl flex flex-col justify-between min-h-[220px]">
                 <div>
                     <div class="text-amber-400 text-xs space-x-1 mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -170,20 +171,60 @@
                 </div>
             </div>
 
-            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between">
-                <p class="text-stone-300 text-xs italic leading-relaxed">"Flawless automation infrastructure. The continuous support retainer keeps our leads moving 24/7."</p>
+            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between min-h-[220px]">
+                <div>
+                    <div class="text-amber-400 text-[10px] space-x-0.5 mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 text-xs italic leading-relaxed">"Flawless automation infrastructure. The continuous support retainer keeps our leads moving 24/7."</p>
+                </div>
                 <div class="mt-4 flex items-center gap-2">
                     <div class="w-6 h-6 rounded bg-stone-900 flex items-center justify-center font-bold text-[10px] text-amber-400">SK</div>
                     <span class="text-[11px] font-bold uppercase tracking-wide text-white">Sarah K.</span>
                 </div>
             </div>
 
-            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between md:col-start-3">
-                <p class="text-stone-300 text-xs italic leading-relaxed">"Saved us from hiring two full-time administrative operators this quarter."</p>
+            <div class="border border-stone-900 bg-stone-950/40 p-6 rounded-xl flex flex-col justify-between min-h-[240px]">
+                <div>
+                    <div class="text-amber-400 text-[10px] space-x-0.5 mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-300 text-xs italic leading-relaxed">"Saved us from hiring two full-time administrative operators this quarter."</p>
+                </div>
                 <div class="mt-4 flex items-center gap-2">
                     <div class="w-6 h-6 rounded bg-stone-900 flex items-center justify-center font-bold text-[10px] text-amber-400">DL</div>
                     <span class="text-[11px] font-bold uppercase tracking-wide text-white">David L.</span>
                 </div>
+            </div>
+
+            <div class="md:col-span-2 border border-stone-800 bg-stone-950/80 p-6 rounded-xl shadow-lg shadow-amber-500/[0.02]">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-1"><i class="fa-solid fa-pen-to-square mr-1"></i> Client Portal</h3>
+                <h4 class="text-sm font-bold text-white mb-4">Are you an active partner? Leave your feedback:</h4>
+                
+                <form action="YOUR_REVIEWS_WEBHOOK_URL_HERE" method="POST" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="text" name="client_name" placeholder="Your Name" required 
+                            class="w-full bg-black border border-stone-800 rounded px-3 py-2.5 text-white placeholder-stone-600 focus:outline-none focus:border-amber-400 text-xs transition-all">
+                        <input type="text" name="client_company" placeholder="Company Name & Title" required 
+                            class="w-full bg-black border border-stone-800 rounded px-3 py-2.5 text-white placeholder-stone-600 focus:outline-none focus:border-amber-400 text-xs transition-all">
+                    </div>
+                    <div>
+                        <textarea name="client_review" rows="3" placeholder="Describe the operational impact or sales growth scale your systems achieved..." required 
+                            class="w-full bg-black border border-stone-800 rounded px-3 py-2.5 text-white placeholder-stone-600 focus:outline-none focus:border-amber-400 text-xs transition-all"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-stone-500">Rating:</span>
+                            <div class="text-amber-400 text-xs space-x-1 cursor-pointer">
+                                <input type="hidden" name="rating" value="5">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="bg-stone-900 border border-stone-800 hover:bg-white hover:text-black text-white text-[10px] font-bold uppercase tracking-wider px-5 py-2.5 rounded transition-all duration-300">
+                            Publish Verification
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
