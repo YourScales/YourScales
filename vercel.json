@@ -1,24 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "portal.yourscales.com"
-        }
-      ],
-      "destination": "/portal.html"
-    },
-    {
-      "source": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "portal.yourscales.com"
-        }
-      ],
-      "destination": "/portal.html"
-    }
-  ]
+  "cleanUrls": true
 }
