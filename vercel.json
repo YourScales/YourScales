@@ -2,8 +2,23 @@
   "rewrites": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "portal.yourscales.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "portal.yourscales.com"
+        }
+      ],
       "destination": "/portal/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "portal.yourscales.com"
+        }
+      ],
+      "destination": "/portal/$1"
     }
   ]
 }
