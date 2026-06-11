@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "portal.yourscales.com" }],
+      "destination": "/portal/index.html"
+    }
+  ]
+}
