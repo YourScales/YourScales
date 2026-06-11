@@ -9,7 +9,17 @@
           "value": "portal.yourscales.com"
         }
       ],
-      "destination": "/portal.html"
+      "destination": "/portal/index.html"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "portal.yourscales.com"
+        }
+      ],
+      "destination": "/portal/index.html"
     }
   ]
 }
